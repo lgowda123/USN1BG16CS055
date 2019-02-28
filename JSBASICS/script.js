@@ -1,15 +1,17 @@
-
+/*
 var age=18;
 //if(age<13)
-/*{
+{
     console.log("minor");
 }else if(age>=18){
     console.log("major");
-}*/
+}
 //ternary operator
+
 age>=18?console.log("major"):console.log("minor");
 function name(firstname,lastname){
     console.log(firstname+' '+lastname)
+
 }
 name('Divya','Raju');
 //array
@@ -25,8 +27,9 @@ console.log(name[0]);
 name.pop();
 console.log(name.length);
 console.log(name);
-*/
+
 //challenge 2
+
 var bills=[124,48,268];
 var tip=[0,0,0];
 var amount=[0,0,0];
@@ -53,7 +56,7 @@ for(i=0;i<=2;i++)
 {
     console.log(i+1+".bill :"+bills[i]+"amount:"+amount[i]+" tip:"+tip[i]);
 }
-/*var myDetails={
+var myDetails={
     firstname:'likhitha',
     lastname:'gowda',
     doB:1999,
@@ -76,7 +79,18 @@ console.log(myDetails.firstname);
     harshi.firstName='chaman';
     console.log(harshini);
 
-    //
-
     console.log('likhitha is '+myDetails.calcage(1999)+'year old');
-    */
+    
+*/
+   var but=document.getElementById('btn');
+   but.addEventListener('mouseover',changeOnMouseOver);
+   but.addEventListener('mouseout',changeOnMouseOut);
+   function changeOnMouseOver(){
+       var but=document.getElementById('btn');
+       but.style.background="red";
+   }
+   function changeOnMouseOut(){
+    var but=document.getElementById('btn');
+    but.style.background="blue";
+}
+document.querySelector('#hid').textContent="New text";
